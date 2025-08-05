@@ -88,7 +88,7 @@ export default function Portfolio() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="w-full md:w-48 h-32 bg-gray-700 rounded-lg overflow-hidden flex-shrink-0">
                   <img
-                    src="/VolleyballScoreTracker.png"
+                    src="/VolleyballScoreTracker.PNG"
                     alt="Volleyball Tracker Screenshot"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />

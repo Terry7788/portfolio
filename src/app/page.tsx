@@ -12,8 +12,14 @@ export default function Portfolio() {
         <header className="flex justify-between items-start md:items-center mb-16">
           <h1 className="text-xl font-semibold">Developer Portfolio</h1>
           <nav className="space-x-6 text-sm">
-            <a href="/Resume-TerryTruong.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">Resume</a>
-            <a href="https://github.com/Terry7788" target="_blank" rel="noopener noreferrer" className="hover:underline">Github</a>
+            <a href="/Resume-TerryTruong.pdf" target="_blank" rel="noopener noreferrer" className="relative hover:text-white transition-colors duration-200 group">
+              Resume
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="https://github.com/Terry7788" target="_blank" rel="noopener noreferrer" className="relative hover:text-white transition-colors duration-200 group">
+              Github
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </nav>
         </header>
 
@@ -30,9 +36,9 @@ export default function Portfolio() {
             <p className="text-sm text-gray-400">Full Stack Developer</p>
             <a
               href="https://terrytruong.dev"
-              className="text-sm text-blue-400 underline inline-block mt-1"
+              className="text-sm text-white underline inline-block mt-1"
             >
-              terrytruong.dev ↗
+              terrytruong.dev <span className="inline-block text-xs">↗</span>
             </a>
             <p className="mt-4 text-gray-300">
               Full Stack Developer specializing in real-time applications and dynamic user experiences. Building responsive systems that adapt and evolve with every interaction.
@@ -94,8 +100,11 @@ export default function Portfolio() {
                   />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-semibold mt-1 group-hover:underline decoration-2 underline-offset-4 transition-all duration-200">
-                    Volleyball Score Tracker ↗
+                  <h4 className="text-lg font-semibold mt-1 relative group-hover:text-white transition-all duration-200 inline-block">
+                    <span className="relative">
+                      Volleyball Score Tracker <span className="inline-block text-base">↗</span>
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </span>
                   </h4>
                   <p className="text-gray-300 mt-1">
                     A full-stack volleyball match tracking application designed for mobile device use, featuring real-time scoring and match statistics. Actively used by my volleyball club for real-time scoring during practice matches. Built with TypeScript frontend and Java backend using PostgreSQL database.
@@ -105,19 +114,19 @@ export default function Portfolio() {
                       href="https://github.com/Terry7788/volleyball-tracker-frontend"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
+                      className="relative text-sm text-gray-400 hover:text-blue-400 transition-colors duration-200 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-blue-400 before:transition-all before:duration-300 hover:before:w-full"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      Frontend ↗
+                      Frontend <span className="inline-block text-xs">↗</span>
                     </a>
                     <a
                       href="https://github.com/Terry7788/volleyball-tracker-backend"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
+                      className="relative text-sm text-gray-400 hover:text-blue-400 transition-colors duration-200 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-blue-400 before:transition-all before:duration-300 hover:before:w-full"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      Backend ↗
+                      Backend <span className="inline-block text-xs">↗</span>
                     </a>
                   </div>
                 </div>
@@ -134,8 +143,11 @@ export default function Portfolio() {
                   />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-semibold mt-1 group-hover:underline decoration-2 underline-offset-4 transition-all duration-200">
-                    Daily Caloric Intake Calculator
+                  <h4 className="text-lg font-semibold mt-1 relative inline-block">
+                    <span className="relative">
+                      Daily Caloric Intake Calculator
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </span>
                   </h4>
                   <p className="text-gray-300 mt-1">
                     A responsive Next.js application using App Router, JWT authentication, and dynamic role-based routes with a clean MUI component library for tracking daily nutrition goals. <span className="text-yellow-400 text-sm font-medium">(In Progress)</span>
@@ -143,17 +155,17 @@ export default function Portfolio() {
                   <div className="flex gap-4 mt-3">
                     <a
                       href="#"
-                      className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
+                      className="relative text-sm text-gray-400 hover:text-blue-400 transition-colors duration-200 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-blue-400 before:transition-all before:duration-300 hover:before:w-full"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      Frontend ↗
+                      Frontend <span className="inline-block text-xs">↗</span>
                     </a>
                     <a
                       href="#"
-                      className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
+                      className="relative text-sm text-gray-400 hover:text-blue-400 transition-colors duration-200 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-blue-400 before:transition-all before:duration-300 hover:before:w-full"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      Backend ↗
+                      Backend <span className="inline-block text-xs">↗</span>
                     </a>
                   </div>
                 </div>
